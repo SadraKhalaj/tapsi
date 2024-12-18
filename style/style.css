@@ -26,152 +26,171 @@
 body {
   font-family: ir_light;
 }
-
-nav {
-  width: 100%;
+body nav {
+  position: fixed;
+  background-color: #f8f8f8;
   height: 10vh;
   display: flex;
-  background-color: #f8f8f8;
-  position: fixed;
+  justify-content: none;
+  align-items: none;
+  width: 100%;
   z-index: 2;
 }
-nav .logo {
+body nav .logo {
   display: flex;
+  justify-content: none;
+  align-items: none;
   width: 40%;
   padding: 0 170px;
 }
-nav .logo a {
+body nav .logo a {
   display: flex;
+  justify-content: none;
   align-items: center;
+  width: none;
   color: #000000;
   font-family: ir_bold;
   font-size: 25px;
 }
-nav ul {
-  width: 38%;
+body nav ul {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 38%;
 }
-nav ul a {
+body nav ul a {
   font-size: 16px;
   color: #545454;
 }
-nav .button {
+body nav .button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 15%;
 }
-nav .button a {
+body nav .button a {
   width: 158px;
-  height: 49px;
+  position: none;
   background-color: #ff5722;
+  height: 49px;
   text-align: center;
   padding-top: 13px;
   color: #fff;
   border-radius: 5px;
 }
-
-header {
+body header {
   position: relative;
-  width: 100%;
+  background-color: none;
   height: 100vh;
   display: flex;
-}
-header .hero {
+  justify-content: none;
+  align-items: none;
   width: 100%;
+}
+body header .hero {
   display: flex;
   justify-content: flex-end;
+  align-items: none;
+  width: 100%;
 }
-header .hero img {
+body header .hero img {
   width: 100%;
   height: 88vh;
 }
-header .hero .phone {
+body header .hero .phone {
+  display: flex;
+  justify-content: none;
+  align-items: none;
   width: 28vw;
-  height: 93vh;
   position: absolute;
+  background-color: none;
+  height: 93vh;
   left: 10vw;
   top: 30vh;
-  display: flex;
 }
-
-main {
+body main {
   position: relative;
   display: flex;
+  justify-content: none;
   align-items: center;
+  width: none;
 }
-main .option-box {
+body main .option-box {
   padding: 40px 50px;
   position: absolute;
+  background-color: rgba(16, 28, 68, 0.404);
+  height: 65vh;
   right: 150px;
   display: flex;
-  background-color: rgba(16, 28, 68, 0.404);
+  justify-content: none;
+  align-items: none;
   width: 40%;
-  height: 65vh;
   border-radius: 20px;
 }
-main .option-box .textbox {
+body main .option-box .textbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
   width: 100%;
   height: 100px;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-main .option-box .textbox h2 {
+body main .option-box .textbox h2 {
   font-size: 50px;
   color: #fff;
   font-family: ir_bold;
 }
-main .option-box .textbox p {
+body main .option-box .textbox p {
   font-size: 30px;
   color: #fff;
 }
-main .option-box .button-box {
+body main .option-box .button-box {
   position: absolute;
-  width: 85%;
+  background-color: none;
   height: 70%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: 85%;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
-main .option-box .button-box .box {
+body main .option-box .button-box .box {
   height: 25vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: none;
+  width: none;
+  flex-wrap: wrap;
 }
-main .option-box .button-box .box .white-button {
+body main .option-box .button-box .box .white-button {
   background-color: #fff;
   color: black;
   border: none;
 }
-main .option-box .button-box .box a {
-  width: 220px;
+body main .option-box .button-box .box a {
+  position: none;
+  background-color: transparent;
   height: 60px;
   border: 2px solid #fff;
-  background-color: transparent;
   color: #fff;
   border-radius: 13px;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 220px;
   text-align: center;
 }
-main .option-box .bottom-button {
+body main .option-box .bottom-button {
   position: absolute;
-  width: 80%;
+  background-color: none;
   height: 75%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: 80%;
 }
-main .option-box .bottom-button a {
-  width: 200px;
+body main .option-box .bottom-button a {
   height: 50px;
   border: 2px solid #fff;
   color: #fff;
@@ -180,6 +199,7 @@ main .option-box .bottom-button a {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 200px;
   text-align: center;
 }
 

@@ -1,0 +1,133 @@
+@use "./reset";
+@use "./typogrophy";
+
+@mixin flex($justify , $align , $wid){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  width: $wid;
+}
+
+@mixin pbh($position , $bgc , $height){
+  position: $position;
+  background-color: $bgc;
+  height: $height;
+}
+
+body{
+    font-family: ir_light;
+
+nav{
+  @include pbh(fixed,#f8f8f8 ,10vh );
+    @include flex(none,none,100% );
+    z-index: 2;
+
+    .logo{
+     @include flex(none,none,40% );
+        padding: 0 170px;
+        a {
+          @include flex(none, center, none);
+            color: #000000;
+            font-family: ir_bold;
+            font-size: 25px;
+        }
+    }
+    ul {
+        @include flex(space-between, center, 38%);
+        a {
+            font-size: 16px;
+            color: #545454;
+        }
+    }
+    .button{
+      @include flex(center, center,15%);
+        a {
+            width: 158px;
+            @include pbh(none,#ff5722 ,49px );
+            text-align: center;
+            padding-top: 13px;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+}
+header{
+  @include pbh(relative,none ,100vh );
+    @include flex(none,none,100% );
+    .hero{
+      @include flex(flex-end,none ,100% );
+        img{
+            width: 100%;
+            height:88vh;
+        }
+    .phone {
+      @include flex(none,none ,28vw );
+      @include pbh(absolute,none ,93vh );
+      left: 10vw;
+      top: 30vh;
+      }
+    }
+}
+main {
+  position: relative;
+  @include flex(none,center ,none );
+  .option-box {
+    padding: 40px 50px;
+    @include pbh(absolute,rgba(16, 28, 68, 0.404) ,65vh );
+    right: 150px;
+    @include flex(none,none ,40% );
+    border-radius: 20px;
+    .textbox {
+      @include flex(space-between,none ,100% );
+      height: 100px;
+      flex-direction: column;
+      h2 {
+        font-size: 50px;
+        color: #fff;
+        font-family: ir_bold;
+      }
+      p {
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+    .button-box {
+      @include pbh(absolute,none ,70% );
+      @include flex(center,flex-end ,85% );
+      flex-wrap: wrap;
+      .box {
+        height: 25vh;
+        @include flex(space-evenly,none ,none );
+        flex-wrap: wrap;
+        .white-button {
+          background-color: #fff;
+          color: black;
+          border: none;
+        }
+        a {
+          @include pbh(none,transparent ,60px );
+          border: 2px solid #fff;
+          color: #fff;
+          border-radius: 13px;
+          font-size: 18px;
+          @include flex(center,center ,220px );
+          text-align: center;
+        }
+      }
+    }
+    .bottom-button {
+      @include pbh(absolute,none ,75% );
+      @include flex(center,flex-end ,80% );
+      a {
+        height: 50px;
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 13px;
+        font-size: 18px;
+        @include flex(center,center ,200px );
+        text-align: center;
+      }
+    }
+  }
+}
+}
